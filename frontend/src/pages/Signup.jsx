@@ -17,7 +17,7 @@ const Signup = () => {
     <div className="container mt-5">
       <h3>Signup</h3>
       <form onSubmit={handleSignup}>
-        <input className="form-control mb-2" placeholder="Name" onChange={e=>setName(e.target.value)} />
+        <input style={{ width: '270px' }} className="form-control mb-2" placeholder="Name" onChange={e=>setName(e.target.value)} />
         <input className="form-control mb-2" placeholder="Email" onChange={e=>setEmail(e.target.value)} />
         <input className="form-control mb-2" type="password" placeholder="Password" onChange={e=>setPassword(e.target.value)} />
         <button className="btn btn-primary">Signup</button>

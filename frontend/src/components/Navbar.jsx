@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const navigate= useNavigate()
+  const token= localStorage.getItem("token")
+  if (!token) return null
+
   const logout= ()=>{
     localStorage.removeItem('token')
     navigate('/login')

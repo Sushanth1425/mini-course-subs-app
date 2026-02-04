@@ -18,10 +18,10 @@ const Login = () => {
     }
   }
   return (
-    <div className="container mt-5">
+    <div style={{ width: '800px' }} className="container w-100 mt-5">
       <h3>Login</h3>
-      <form action="" onSubmit={handleLogin}>
-        <input type="text" className='form-control mb-2' placeholder='Email' onChange={e=>setEmail(e.target.value)} />
+      <form action="" className='w-100 m-10' onSubmit={handleLogin}>
+        <input type="text" style={{ width: '270px' }} className='form-control mb-2' placeholder='Email' onChange={e=>setEmail(e.target.value)} />
         <input type="password" className='form-control mb-2' placeholder='Password' onChange={e=>setPwd(e.target.value)} />
         <button>Login</button>
       </form>
