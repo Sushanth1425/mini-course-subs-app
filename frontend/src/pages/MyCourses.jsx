@@ -4,7 +4,17 @@ import API from '../services/api'
 const MyCourses = () => {
   const [courses, setCourses]= useState([])
 
-  useEffect(()=> API.get("/my-courses").then(res=> setCourses(res.data)), [])
+  useEffect(()=>{
+    const fetchMyCourses= async ()=>{
+      try {
+        const res= await API.get("/my-courses")
+        setCourses(res.data)
+      } catch (err) {
+        console.error(err)
+      }
+    }
+    fetchMyCourses()
+  }, [])
   
   return (
     <div className="container mt-4">

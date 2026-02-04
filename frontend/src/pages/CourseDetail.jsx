@@ -8,7 +8,17 @@ const CourseDetail = () => {
   const [promo, setPromo]= useState('');
   const [validPromo, setValidPromo]= useState(false);
 
-  useEffect(()=> API.get(`/courses/${id}`).then(res=> setCourse(res.data)), [id])
+  useEffect(()=>{
+    const fetchCourse= async()=>{
+      try {
+        const res= await API.get(`/courses/${id}`);
+        setCourse(res.data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchCourse();
+  }, [id])
 
   const applyPromo= ()=>{
     if (promo==='BFSALE25') setValidPromo(true)

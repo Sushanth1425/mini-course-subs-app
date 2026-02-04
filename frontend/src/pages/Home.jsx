@@ -5,7 +5,17 @@ import CourseCard from '../components/CourseCard';
 const Home = () => {
   const [courses, setCourses]= useState([])
 
-  useEffect(()=> API.get('/courses').then(res=>setCourses(res.data)), [])
+  useEffect(()=> {
+    const fetchCourses= async ()=>{
+      try {
+        const res= await API.get("/courses")
+        setCourses(res.data)
+      } catch (err) {
+        console.error(err)
+      }
+    }
+    fetchCourses();
+  }, [])
 
   return (
     <div className="container mt-4">
