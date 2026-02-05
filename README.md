@@ -14,18 +14,16 @@ This project demonstrates **authentication, protected routes, backend business l
 
 
 ##### Login page
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/afee0696-4374-4f4b-ad43-4bb7f0b62382" />
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/afee0696-4374-4f4b-ad43-4bb7f0b62382" />
 ##### Signup page
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4ac158ba-bb0a-4837-80ad-782ddbe91a7a" />
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4ac158ba-bb0a-4837-80ad-782ddbe91a7a" />
 ##### Course List
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/3162325e-9622-4bb8-98a3-e9cf32a38700" />
-##### 
-  
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/3162325e-9622-4bb8-98a3-e9cf32a38700" />  
 ##### Course details 
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/1b07297b-1985-4924-8b1b-e68266ade4e5" />
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/0b3168e3-ac4c-4614-a49a-ed0b0510ef99" />
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/1b07297b-1985-4924-8b1b-e68266ade4e5" />
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/0b3168e3-ac4c-4614-a49a-ed0b0510ef99" />
 ##### My Courses page
-  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7ee3be06-735f-445c-909c-47a7d53a39d7" />
+  * <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7ee3be06-735f-445c-909c-47a7d53a39d7" />
 
 ---
 ##  Features
