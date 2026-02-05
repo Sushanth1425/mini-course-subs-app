@@ -236,13 +236,13 @@ VITE_API_URL=http://localhost:5050/api
 
 ##  How to Run Locally
 
-### 1 Clone Repository
+### 1. Clone Repository
 
 ```
 git clone https://github.com/your-username/mini-course-subscription-app.git
 ````
 
-### 2 Backend Setup
+### 2. Backend Setup
 
 ```
 cd backend
@@ -250,7 +250,7 @@ npm install
 npm run dev
 ```
 
-### 3 Frontend Setup
+### 3. Frontend Setup
 
 ```
 cd frontend
