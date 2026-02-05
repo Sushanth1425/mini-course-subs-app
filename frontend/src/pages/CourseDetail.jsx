@@ -49,10 +49,10 @@ const CourseDetail = () => {
           <input className="form-control mb-2" placeholder="Promo Code" onChange={e => setPromo(e.target.value)} />
           <div className='d-flex justify-content-around p-2'>
             <button className="btn btn-warning mb-2 mr-2" onClick={applyPromo}>Apply Promo</button>
-            <button className="btn btn-success h-100" disabled={course.price > 0 && !validPromo} onClick={subscribe}>Subscribe</button>
           </div>
         </>
       )}
+      <button className="btn btn-success h-100" disabled={course.price > 0 && !validPromo} onClick={subscribe}>Subscribe</button>
     </div>
   )
 }
