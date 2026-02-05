@@ -1,4 +1,3 @@
-```
 #  Mini Course Subscription App
 
 A full-stack MERN application that allows users to browse courses, apply promo codes, and subscribe to free or paid courses using a mock payment flow.
@@ -109,13 +108,13 @@ mini-course-subscription-app/
 
 ---
 
-##  Dummy Credentials (For Testing)
+##   Credentials (For Testing)
 
 You can use the following pre-created user credentials:
 
 ```
 
-Email: [testuser@gmail.com](mailto:testuser@gmail.com)
+Email: testuser@gmail.com
 Password: test123
 
 ```
@@ -124,7 +123,7 @@ Password: test123
 
 ---
 
-## 🎟 Promo Code
+##  Promo Code
 
 ```
 
@@ -177,16 +176,14 @@ GET /api/my-courses
 PORT=5050
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-FRONTEND_URL=[http://localhost:5173](http://localhost:5173)
-
+FRONTEND_URL=http://localhost:5173
 ```
 
 ### Frontend (`frontend/.env`)
 
 ```
 
-VITE_API_URL=[http://localhost:5050/api](http://localhost:5050/api)
-
+VITE_API_URL=http://localhost:5050/api
 ````
 
 ---
@@ -240,12 +237,14 @@ http://localhost:5050
 
 ---
 
-##  Screenshots (Optional but Recommended)
+##  Screenshots 
 
 
 * Login page
+* Signup page
 * Home page
-* Course details with promo
+* Course List
+* Course details 
 * My Courses page
 
 ---
@@ -262,59 +261,11 @@ http://localhost:5050
 ##  Author
 
 **Sushanth Balasekaran**
-Frontend / MERN Developer
 
 GitHub: [https://github.com/Sushanth1425](https://github.com/Sushanth1425)
 
-```
+
 
 ---
 
 
-
-
-
-mini-course-subscription-app/
-│
-├── backend/
-│   ├── controllers/
-|   |   ├── authController.js
-|   |   └── subsController.js
-│   ├── middleware/
-|   |   └── authMiddleware.js
-│   ├── models/
-|   |   ├── Course.js
-|   |   ├── Subscription.js
-|   |   └── User.js
-│   ├── routes/
-|   |   ├── authRoutes.js
-|   |   ├── courseRoutes.js
-|   |   └── subsRoutes.js
-│   ├── utils/
-|   |   ├── db.js
-|   |   └── seedCourses.js
-│   ├── server.js
-│   ├── .gitignore
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Signup.jsx
-│   │   │   ├── Home.jsx
-│   │   │   ├── CourseDetail.jsx
-│   │   │   └── MyCourses.jsx
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── CourseCard.jsx
-│   │   │   └── PrivateRoute.jsx
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   ├── index.css
-│   │   └── index.js
-│   └── package.json
-│
-└── README.md
