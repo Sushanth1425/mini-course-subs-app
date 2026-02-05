@@ -35,7 +35,15 @@ const CourseDetail = () => {
     }    
   }
 
-  if (!course) return <p>Loading...</p>
+  if (!course) return (
+    <div className="container mt-4 placeholder-glow">
+      <div style={{ height: 250, background: '#e0e0e0' }} className="mb-3" />
+      <h3><span className="placeholder col-6"></span></h3>
+      <p><span className="placeholder col-8"></span></p>
+      <p><span className="placeholder col-4"></span></p>
+      <span className="btn btn-success disabled placeholder col-4"></span>
+    </div>
+  )
 
   return (
     <div className="container mt-4">
