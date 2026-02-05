@@ -5,7 +5,29 @@ A full-stack MERN application that allows users to browse courses, apply promo c
 This project demonstrates **authentication, protected routes, backend business logic, and frontend state handling**, built as part of a technical assignment.
 
 ---
+##  Live Demo
 
+* **Frontend (Vercel):** [https://mini-course-subs-app.vercel.app/](https://mini-course-subs-app.vercel.app/) 
+* **Backend (Render) :** [https://mini-course-subs-app.onrender.com/](https://mini-course-subs-app.onrender.com/)
+---
+##  Screenshots 
+
+
+##### Login page
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/afee0696-4374-4f4b-ad43-4bb7f0b62382" />
+##### Signup page
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4ac158ba-bb0a-4837-80ad-782ddbe91a7a" />
+##### Course List
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/3162325e-9622-4bb8-98a3-e9cf32a38700" />
+##### 
+  
+##### Course details 
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/1b07297b-1985-4924-8b1b-e68266ade4e5" />
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/0b3168e3-ac4c-4614-a49a-ed0b0510ef99" />
+##### My Courses page
+  <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7ee3be06-735f-445c-909c-47a7d53a39d7" />
+
+---
 ##  Features
 
 ###  Authentication
@@ -114,8 +136,34 @@ You can use the following pre-created user credentials:
 
 ```
 
-Email: testuser@gmail.com
-Password: test123
+Email: testuser1@gmail.com
+Password: testuser1
+
+```
+
+```
+
+Email: testuser2@gmail.com
+Password: testuser2
+
+```
+
+```
+
+Email: testuser3@gmail.com
+Password: testuser3
+
+```
+```
+
+Email: testuser4@gmail.com
+Password: testuser4
+
+```
+```
+
+Email: testuser5@gmail.com
+Password: testuser5
 
 ```
 
@@ -237,17 +285,6 @@ http://localhost:5050
 
 ---
 
-##  Screenshots 
-
-
-* Login page
-* Signup page
-* Home page
-* Course List
-* Course details 
-* My Courses page
-
----
 
 ##  Key Learnings
 
