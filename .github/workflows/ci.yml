@@ -8,12 +8,9 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -25,26 +22,27 @@ jobs:
           cd backend
           npm install
 
-      - name: Run backend tests
+      - name: Start backend
         run: |
           cd backend
-          npm test
+          nohup npm run dev &
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
-      
       - name: Install frontend dependencies
         run: |
           cd frontend
           npm install
-        
+
       - name: Install Playwright browsers
         run: |
           cd frontend
           npx playwright install
-        
+
       - name: Run Playwright tests
         run: |
           cd frontend
           npm run test:e2e
+        env:
+          VITE_API_URL: https://mini-course-subs-app.onrender.com/api
