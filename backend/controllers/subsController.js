@@ -1,8 +1,11 @@
 const Subscription = require("../models/Subscription");
 const Course = require("../models/Course");
+const {subscribeSchema}= require('../validations/subsValidation')
 
-exports.subscribeCourse = async (req, res) => {
+exports.subscribeCourse = async (req, res, next) => {
   try {
+    const {error}= subscribeSchema.validate(req.body)
+    if (error) return res.status(400).json({message: error.details[0].message})
     const { courseId, promoCode } = req.body;
 
     const course = await Course.findById(courseId);
@@ -26,18 +29,16 @@ exports.subscribeCourse = async (req, res) => {
 
     return res.status(201).json(subscription);
   } catch (err) {
-    console.error(err);
-    return res.status(500).json({ message: "Server error" });
+    next(err);
   }
 };
 
-exports.getMyCourses = async (req, res) => {
+exports.getMyCourses = async (req, res, next) => {
   try {
     const subs = await Subscription.find({ userId: req.user._id }).populate("courseId");
 
     return res.status(200).json(subs);
   } catch (err) {
-    console.error(err);
-    return res.status(500).json({ message: "Server error" });
+    next(err);
   }
 };
