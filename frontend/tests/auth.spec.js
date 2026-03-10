@@ -15,5 +15,5 @@ test('login flow', async ({page})=>{
   await page.click('button[type="submit"]')
 
   await page.waitForURL(/home/, {timeout: 15000})
-  await expect(page).toHaveURL(/)
+  await expect(page).toHaveURL('/')
 }) 
