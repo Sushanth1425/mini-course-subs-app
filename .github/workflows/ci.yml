@@ -30,6 +30,9 @@ jobs:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
+      - name: Wait for backend
+        run: sleep 10
+
       - name: Install frontend dependencies
         run: |
           cd frontend

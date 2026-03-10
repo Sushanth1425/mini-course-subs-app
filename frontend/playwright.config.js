@@ -11,6 +11,6 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI, 
   },
   use: {
-    baseURL: process.env.VITE_API_URL,
+    baseURL: 'http://localhost:5173',
   },
 });
