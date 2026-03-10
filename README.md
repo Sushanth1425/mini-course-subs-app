@@ -1,5 +1,7 @@
 #  Mini Course Subscription App
 
+![CI](https://github.com/Sushanth1425/mini-course-subs-app/actions/workflows/ci.yml/badge.svg)
+
 A full-stack MERN application that allows users to browse courses, apply promo codes, and subscribe to free or paid courses using a mock payment flow.
 
 This project demonstrates **authentication, protected routes, backend business logic, and frontend state handling**, built as part of a technical assignment.
@@ -11,7 +13,6 @@ This project demonstrates **authentication, protected routes, backend business l
 * **Backend (Render) :** [https://mini-course-subs-app.onrender.com/](https://mini-course-subs-app.onrender.com/)
 ---
 
-![CI](https://github.com/Sushanth1425/mini-course-subs-app/actions/workflows/ci.yml/badge.svg)
 
 ##  Screenshots 
 
@@ -85,8 +86,8 @@ This project demonstrates **authentication, protected routes, backend business l
 mini-course-subscription-app/
 │
 ├── .github/
-│   ├── workflows/
-|   |   └── ci.yml
+│   └── workflows/
+|       └── ci.yml
 │
 ├── backend/
 │   ├── controllers/
@@ -134,6 +135,8 @@ mini-course-subscription-app/
 │   │   ├── App.js
 │   │   ├── index.css
 │   │   └── index.js
+│   ├── tests/
+│   │   └── auth.spec.js
 │   └── package.json
 │
 └── README.md
