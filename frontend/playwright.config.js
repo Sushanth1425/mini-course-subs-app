@@ -1,0 +1,15 @@
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './tests',
+  timeout: 30 * 1000, 
+  expect: {
+    timeout: 5000,
+  },
+  webServer: {
+    command: 'npm run dev', 
+    url: 'http://localhost:5173',
+    timeout: 120 * 1000, 
+    reuseExistingServer: !process.env.CI, 
+  },
+});

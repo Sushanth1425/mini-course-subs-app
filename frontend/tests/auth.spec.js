@@ -1,4 +1,4 @@
-const {test, expect}= require('@playwright/test')
+import {test, expect} from '@playwright/test'
 
 test('login flow', async ({page})=>{
   await page.goto('http://localhost:5173/login')
@@ -9,4 +9,4 @@ test('login flow', async ({page})=>{
   await page.click('button[type="submit"]')
 
   await expect(page).toHaveURL(/home/)
-})
+})  

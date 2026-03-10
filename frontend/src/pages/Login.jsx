@@ -21,9 +21,9 @@ const Login = () => {
     <div style={{ width: '800px' }} className="container w-100 mt-5">
       <h3>Login</h3>
       <form action="" className='w-100 m-10' onSubmit={handleLogin}>
-        <input type="text" style={{ width: '270px' }} className='form-control mb-2' placeholder='Email' onChange={e=>setEmail(e.target.value)} />
+        <input type="email" style={{ width: '270px' }} className='form-control mb-2' placeholder='Email' onChange={e=>setEmail(e.target.value)} />
         <input type="password" className='form-control mb-2' placeholder='Password' onChange={e=>setPwd(e.target.value)} />
-        <button>Login</button>
+        <button type="submit">Login</button>
       </form>
       <p className="mt-4 text-center text-gray-600">Don't have an account? <Link className='text-blue-500 hover:text-blue-600' to='/signup' >SignUp</Link></p>
     </div>
