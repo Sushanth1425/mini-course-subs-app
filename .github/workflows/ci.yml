@@ -48,4 +48,4 @@ jobs:
           cd frontend
           npm run test:e2e
         env:
-          VITE_API_URL: https://mini-course-subs-app.onrender.com/api
+          VITE_API_URL: http://localhost:5050/api

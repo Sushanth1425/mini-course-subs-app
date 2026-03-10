@@ -1,12 +1,18 @@
 import {test, expect} from '@playwright/test'
 
 test('login flow', async ({page})=>{
+  const email = `${Date.now()}@gmail.com`
+
+  await page.goto('/signup')
+  await page.fill('input[name="name"]', 'tset user')
+  await page.fill('input[type="email"]', email)
+  await page.fill('input[type="password"]', 'sush1234')
+  await page.click('button[type="submit"]')
+
+
   await page.goto('/login')
-  await page.waitForSelector('input[type="email"]')
-
-  await page.fill('input[type="email"]', 'testuser1@gmail.com')
-  await page.fill('input[type="password"]', 'testuser1')
-
+  await page.fill('input[type="email"]', email)
+  await page.fill('input[type="password"]', 'sush1234')
   await page.click('button[type="submit"]')
 
   await page.waitForURL(/home/, {timeout: 10000})
