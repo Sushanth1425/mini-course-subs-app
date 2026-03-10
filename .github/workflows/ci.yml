@@ -38,6 +38,9 @@ jobs:
           cd frontend
           npm install
 
+      - name: Install Playwright deps
+        run: sudo npx playwright install-deps
+
       - name: Install Playwright browsers
         run: |
           cd frontend

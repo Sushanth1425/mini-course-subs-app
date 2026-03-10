@@ -9,6 +9,7 @@ test('login flow', async ({page})=>{
   await page.fill('input[type="password"]', 'sush1234')
   await page.click('button[type="submit"]')
 
+  await page.waitForTimeout(6000)
 
   await page.goto('/login')
   await page.fill('input[type="email"]', email)
