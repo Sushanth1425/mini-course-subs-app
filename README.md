@@ -10,6 +10,9 @@ This project demonstrates **authentication, protected routes, backend business l
 * **Frontend (Vercel):** [https://mini-course-subs-app.vercel.app/](https://mini-course-subs-app.vercel.app/) 
 * **Backend (Render) :** [https://mini-course-subs-app.onrender.com/](https://mini-course-subs-app.onrender.com/)
 ---
+
+![CI](https://github.com/Sushanth1425/mini-course-subs-app/actions/workflows/ci.yml/badge.svg)
+
 ##  Screenshots 
 
 
@@ -283,24 +286,8 @@ http://localhost:5050
 
 ---
 
-##  Bonus Features Implemented
-
-* Route protection using auth middleware
-* Promo validation UX
-* Discounted vs original price display
-* Duplicate subscription prevention
-* Clean UI with Bootstrap
-* Loading states
-
----
 
 
-##  Key Learnings
-
-* Implementing JWT authentication end-to-end
-* Designing backend business logic for subscriptions
-* Protecting frontend routes
-* Handling async API flows in React
 
 ---
 
