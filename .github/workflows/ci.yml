@@ -39,7 +39,7 @@ jobs:
           npm install
 
       - name: Install Playwright deps
-        run: sudo npx playwright install-deps
+        run: npx playwright install-deps
 
       - name: Install Playwright browsers
         run: |
