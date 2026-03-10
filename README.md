@@ -81,12 +81,18 @@ This project demonstrates **authentication, protected routes, backend business l
 
 mini-course-subscription-app/
 │
+├── .github/
+│   ├── workflows/
+|   |   └── ci.yml
+│
 ├── backend/
 │   ├── controllers/
 |   |   ├── authController.js
 |   |   └── subsController.js
 │   ├── middleware/
-|   |   └── authMiddleware.js
+|   |   ├── authMiddleware.js
+|   |   ├── errorMiddleware.js
+|   |   └── rateLimiter.js
 │   ├── models/
 |   |   ├── Course.js
 |   |   ├── Subscription.js
@@ -98,6 +104,11 @@ mini-course-subscription-app/
 │   ├── utils/
 |   |   ├── db.js
 |   |   └── seedCourses.js
+│   ├── validations/
+|   |   ├── authValidation.js
+|   |   └── subsValidation.js
+│   ├── tests/
+|   |   └── auth.test.js
 │   ├── server.js
 │   ├── .gitignore
 │   └── .env
